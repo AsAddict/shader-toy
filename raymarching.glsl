@@ -13,10 +13,10 @@ vec3 cameraTarget = vec3(0.0, 0.0, 0.0);
 vec3 cameraUp = vec3(0.0, 1.0, 0.0);
 const float near = 1.0;
 
-
 vec3 getRay() {
 
     vec2 screenPos = (gl_FragCoord.xy / u_resolution.xy);
+    screenPos.x = 
     screenPos = screenPos * 2.0 - 1.0; // -1.0 to 1.0
     vec3 dir = normalize(cameraTarget - cameraOrigin);
     vec3 right = cross(dir, cameraUp);
