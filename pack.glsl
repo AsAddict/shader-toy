@@ -25,7 +25,7 @@ float unpackFloatFromVec4i(const vec4 rgba) {
 }
 
 void main () {
-    
+
     vec2 st = (gl_FragCoord.xy / u_resolution.xy);
 
     float testValue = 0.981;
